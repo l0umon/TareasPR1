@@ -17,39 +17,44 @@ public class EliminarDuplicados {
 
     public static void main(String[] args) {
         boolean r;
+        int h = 0;
         int[] arreglo = new int[5];
         Scanner entrada = new Scanner(System.in);
         for (int i = 0; i < arreglo.length; i++) {
             System.out.print("Introduzca un numero: ");
             int num = entrada.nextInt();
+            //  System.out.println("numero arreglo: " + i );
             if (i == 0) {
                 arreglo[0] = num;
             } else {
-               r=buscarDuplicado(arreglo, num);
-
-                while ( r=true) {
-                    System.out.print("Ya ha introducido ese numero. Ingrese otro ");
+                r = buscarDuplicado(arreglo, num, i);
+                while (r == true) {
+                    System.out.println("Numero Duplicado! ");
+                    System.out.print("Introduzca un numero: ");
                     num = entrada.nextInt();
-                    r=buscarDuplicado(arreglo, num);
+                    r = buscarDuplicado(arreglo, num, i);
+
                 }
-                
                 arreglo[i] = num;
+
             }
+
+        }
+        System.out.println("\nNumeros distintos: ");
+        System.out.println("******************");
+        for (int i = 0; i < arreglo.length; i++) {
+            System.out.print(arreglo[i] + " ");
         }
 
     }
 
-    public static boolean buscarDuplicado(int[] array, int num) {
+    public static boolean buscarDuplicado(int[] array, int num, int lon) {
         boolean r = false;
-        for (int i = 0; i < array.length; i++) {
-          //  System.out.println(array[i]);
-            // System.out.println(array[num]);
+        for (int i = 0; i < lon; i++) {
+            //  System.out.println(array[i]);
             if (array[i] == num) {
                 r = true;
-            } else {
-                r = false;
             }
-
         }
 
         return r;
