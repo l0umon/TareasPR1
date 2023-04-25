@@ -14,34 +14,44 @@ Crear un método estático buscarDuplicado que retorne true si es un número dup
 o false en caso contrario. Imprimir el arreglo cuando se hayan ingresado 5 números
 distintos*/
 public class EliminarDuplicados {
+
     public static void main(String[] args) {
+        boolean r;
         int[] arreglo = new int[5];
         Scanner entrada = new Scanner(System.in);
         for (int i = 0; i < arreglo.length; i++) {
-            System.out.print("Introduzca un número: ");
+            System.out.print("Introduzca un numero: ");
             int num = entrada.nextInt();
             if (i == 0) {
                 arreglo[0] = num;
             } else {
-               /* buscarDuplicado();
-           
+               r=buscarDuplicado(arreglo, num);
 
+                while ( r=true) {
+                    System.out.print("Ya ha introducido ese numero. Ingrese otro ");
+                    num = entrada.nextInt();
+                    r=buscarDuplicado(arreglo, num);
+                }
+                
+                arreglo[i] = num;
             }
         }
 
     }
 
     public static boolean buscarDuplicado(int[] array, int num) {
-        boolean r= false;
-        for (int i = 0; i < 5; i++) {
+        boolean r = false;
+        for (int i = 0; i < array.length; i++) {
+          //  System.out.println(array[i]);
+            // System.out.println(array[num]);
             if (array[i] == num) {
-                r= true;
+                r = true;
             } else {
-                r= false;
+                r = false;
             }
 
         }
-        
+
         return r;
 
     }
