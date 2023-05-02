@@ -12,6 +12,12 @@ public class CuentaDeAhorros {
     public CuentaDeAhorros() {
     }
 
+    public CuentaDeAhorros(double saldoAhorros) {
+        this.saldoAhorros = saldoAhorros;
+    }
+    
+    
+
     public static double getTasalnteresAnual() {
         return tasalnteresAnual;
     }
