@@ -10,6 +10,7 @@ public class CuentaDeAhorros {
     private double saldoAhorros;
 
     public CuentaDeAhorros() {
+         saldoAhorros = 0.0;
     }
 
     public CuentaDeAhorros(double saldoAhorros) {
@@ -36,11 +37,13 @@ public class CuentaDeAhorros {
     
     public double calcularInteresMensual()
     {
-        double interesMensual= saldoAhorros + ( saldoAhorros * tasalnteresAnual / 12);
+         double interesMensual = saldoAhorros * (tasalnteresAnual / 12);
+        saldoAhorros += interesMensual;
         return interesMensual;
+       
     }
     
-    public static double modificarTasalnteres(double tasaInt){
+   public static double modificarTasalnteres(double tasaInt){
         tasalnteresAnual = tasaInt;
         return tasalnteresAnual;
     }
