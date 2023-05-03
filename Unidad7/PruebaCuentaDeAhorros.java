@@ -21,9 +21,13 @@ public class PruebaCuentaDeAhorros {
         ahorrador2.setSaldoAhorros(3000);
 
         CuentaDeAhorros.setTasalnteresAnual(4);
+        System.out.println("Saldo inicial del ahorrrador 1 es: " + ahorrador1.getSaldoAhorros());
+        System.out.println("Saldo inicial del ahorrrador 2 es: " + ahorrador2.getSaldoAhorros());
 
-        for (int i = 0; i < 12; i++) {
-            System.out.println("Mes " + i +  "==>" + ahorrador1.calcularInteresMensual());
+       // System.out.println("Interes mensual " + ahorrador1.);
+
+        for (int i = 1; i <= 12; i++) {
+            System.out.printf("\n Mes %d ==> %.2f + %.2f ", i, ahorrador1.getSaldoAhorros(),ahorrador1.calcularInteresMensual());
             ahorrador1.calcularInteresMensual();
             ahorrador2.calcularInteresMensual();
         }

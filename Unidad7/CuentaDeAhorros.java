@@ -37,7 +37,7 @@ public class CuentaDeAhorros {
     
     public double calcularInteresMensual()
     {
-         double interesMensual = saldoAhorros * (tasalnteresAnual / 12);
+         double interesMensual =( saldoAhorros * tasalnteresAnual / 12)/100;
         saldoAhorros += interesMensual;
         return interesMensual;
        
