@@ -14,7 +14,19 @@ public class PruebaCuentaDeAhorros {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        CuentaDeAhorros ahorrador1 = new CuentaDeAhorros(2000.00);
+        CuentaDeAhorros ahorrador2 = new CuentaDeAhorros(3000.00);
+        CuentaDeAhorros.setTasalnteresAnual(4);
+        for (int i = 0; i < 2; i++) {
+            System.out.println("Ahorrador " + i);
+            for (int j = 0; j < 12; j++) {
+                
+                
+                
+            }
+            
+        }
     }
     
 }

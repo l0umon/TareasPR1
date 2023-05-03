@@ -40,5 +40,11 @@ public class CuentaDeAhorros {
         return interesMensual;
     }
     
+    public static double modificarTasalnteres(double tasaInt){
+        tasalnteresAnual = tasaInt;
+        return tasalnteresAnual;
+    }
+    
+    
     
 }
