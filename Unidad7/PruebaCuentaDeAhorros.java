@@ -28,9 +28,7 @@ public class PruebaCuentaDeAhorros {
             ahorrador2.calcularInteresMensual();
         }
 
-       // System.out.printf("El saldo de ahorrador1 después de 12 meses es: $%.2f\n", ahorrador1.getSaldoAhorros());
-       // System.out.printf("El saldo de ahorrador2 después de 12 meses es: $%.2f\n",ahorrador2.getSaldoAhorros());
-
+       
     }
 
 }
