@@ -1,4 +1,3 @@
-
 package Unidad7;
 
 /**
@@ -6,17 +5,17 @@ package Unidad7;
  * @author l0umon
  */
 public class CuentaDeAhorros {
+
     private static double tasalnteresAnual;
     private double saldoAhorros;
 
     public CuentaDeAhorros() {
-         saldoAhorros = 0.0;
+        saldoAhorros = 0.0;
     }
 
     public CuentaDeAhorros(double saldoAhorros) {
         this.saldoAhorros = saldoAhorros;
     }
-    
 
     public static double getTasalnteresAnual() {
         return tasalnteresAnual;
@@ -33,21 +32,17 @@ public class CuentaDeAhorros {
     public void setSaldoAhorros(double saldoAhorros) {
         this.saldoAhorros = saldoAhorros;
     }
-    
-    
-    public double calcularInteresMensual()
-    {
-         double interesMensual =( saldoAhorros * tasalnteresAnual / 12)/100;
+
+    public double calcularInteresMensual() {
+        double interesMensual = (saldoAhorros * tasalnteresAnual / 12) / 100;
         saldoAhorros += interesMensual;
         return interesMensual;
-       
+
     }
-    
-   public static double modificarTasalnteres(double tasaInt){
+
+    public static double modificarTasalnteres(double tasaInt) {
         tasalnteresAnual = tasaInt;
         return tasalnteresAnual;
     }
-    
-    
-    
+
 }
