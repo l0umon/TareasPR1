@@ -10,7 +10,6 @@ public class CuentaDeAhorros {
     private double saldoAhorros;
 
     public CuentaDeAhorros() {
-        saldoAhorros = 0.0;
     }
 
     public CuentaDeAhorros(double saldoAhorros) {
