@@ -10,6 +10,7 @@ public class Masajista extends SeleccionFutbol{
     private int aniosExperiencia;
 
     public Masajista() {
+           super();
     }
 
     public Masajista(String titulacion, int aniosExperiencia, int id, int edad, String nombre, String apellido) {
@@ -49,7 +50,7 @@ public class Masajista extends SeleccionFutbol{
     }
     
     public void darMasaje(){
-        
+        System.out.println("Da un masaje");
     }
     
     

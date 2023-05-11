@@ -22,9 +22,10 @@ public class SeleccionFutbol {
 
     
     public void concentrarse(){
-        
+        System.out.println("Concentrarse");
     }
      public void viajar(){
+          System.out.println("Viajar");
         
     }
 

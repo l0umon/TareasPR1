@@ -1,17 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Unidad8;
 
-/**
- *
- * @author Desarrollo
- */
+
 public class Entrenador extends SeleccionFutbol{
     private String idFederacion;
 
     public Entrenador() {
+        super();
     }
 
     public Entrenador(String idFederacion, int id, int edad, String nombre, String apellido) {
@@ -32,19 +27,21 @@ public class Entrenador extends SeleccionFutbol{
 
     @Override
     public void concentrarse() {
-        super.concentrarse(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        super.concentrarse(); 
     }
 
     @Override
     public void viajar() {
-        super.viajar(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        super.viajar(); 
     }
     
     public void dirigirPartido(){
+        System.out.println("Dirigir un partido");
         
     }
     
     public void dirigirEntrenamiento(){
+        System.out.println("Dirige un entrenamiento");
         
     }
 }

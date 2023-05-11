@@ -10,6 +10,7 @@ public class Fultbolista extends SeleccionFutbol{
     private String posocion;
 
     public Fultbolista() {
+           super();
     }
 
     public Fultbolista(int cantidadGoles, String posocion, int id, int edad, String nombre, String apellido) {
@@ -29,11 +30,11 @@ public class Fultbolista extends SeleccionFutbol{
     }
     
     public void jugarPartido(){
-        
+        System.out.println("Juega un partido");
     }
 
     public void entrenar(){
-        
+        System.out.println("Entrena");
     }
     public int getCantidadGoles() {
         return cantidadGoles;
